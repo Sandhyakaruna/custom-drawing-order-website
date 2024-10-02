@@ -20,4 +20,4 @@ To run this project on your local machine, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/custom-drawing-order-website.git
+git clone https://github.com/SandhyaKaruna/custom-drawing-order-website.git
