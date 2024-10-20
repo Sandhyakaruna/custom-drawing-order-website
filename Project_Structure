@@ -1,0 +1,16 @@
+/custom-drawing-order-website
+├── /src
+│   ├── /main
+│   │   ├── /java/com/example/drawings
+│   │   │   ├── DrawingOrderController.java     # Controller for handling requests
+│   │   │   ├── DrawingOrderService.java        # Service layer to handle business logic
+│   │   │   ├── DrawingOrder.java               # Model class for drawing orders
+│   │   │   └── DrawingOrderRepository.java     # Repository for interacting with the database
+│   │   ├── /resources
+│   │   │   ├── /static/css/style.css           # CSS for styling
+│   │   │   ├── /static/js/script.js            # JavaScript for frontend interactivity
+│   │   │   ├── /templates/index.html           # Thymeleaf template for the homepage
+│   │   │   ├── application.properties          # Configuration for database and server
+│   └── DrawingOrderApplication.java            # Main application file
+├── pom.xml                                     # Maven dependencies
+└── README.md                                   # Project documentation
