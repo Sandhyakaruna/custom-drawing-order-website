@@ -1,0 +1,52 @@
+<!-- /templates/index.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Custom Drawings</title>
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+</head>
+<body>
+
+<header>
+    <h1>Order Your Custom Drawings</h1>
+</header>
+
+<section id="order-form">
+    <h2>Place Your Order</h2>
+    <form th:action="@{/submit-order}" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="drawing_type">Select Drawing Type:</label>
+            <select id="drawing_type" name="drawing_type" required>
+                <option value="portrait">Portrait</option>
+                <option value="landscape">Landscape</option>
+                <option value="abstract">Abstract</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Order Now">
+        </div>
+
+        <p th:text="${message}"></p> <!-- Show success message -->
+    </form>
+</section>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
